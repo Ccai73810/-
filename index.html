@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>招贝 - 先安心，再生财</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'zb-bg': '#FAF8F5',
+            'zb-card': '#FFFFFF',
+            'zb-red': '#E53935',
+            'zb-red-light': '#FFEBEE',
+            'zb-text': '#1A1A1A',
+            'zb-text-secondary': '#666666',
+            'zb-text-tertiary': '#999999',
+            'zb-border': '#F0EDE8',
+            'zb-green': '#4CAF50',
+            'zb-green-light': '#E8F5E9',
+            'zb-blue': '#2196F3',
+            'zb-blue-light': '#E3F2FD',
+            'zb-orange': '#FF9800',
+            'zb-orange-light': '#FFF3E0',
+            'zb-purple': '#9C27B0',
+            'zb-teal': '#009688',
+          },
+          fontFamily: {
+            sans: ['Noto Sans SC', 'system-ui', 'sans-serif'],
+          },
+          borderRadius: {
+            '2xl': '16px',
+            '3xl': '20px',
+            '4xl': '24px',
+          },
+          boxShadow: {
+            'card': '0 2px 12px rgba(0, 0, 0, 0.06)',
+            'card-hover': '0 4px 20px rgba(0, 0, 0, 0.1)',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { -webkit-tap-highlight-color: transparent; }
+    body { font-family: 'Noto Sans SC', system-ui, sans-serif; background: #F5F5F5; }
+    .hide-scrollbar::-webkit-scrollbar { display: none; }
+    .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    .animate-fade-in { animation: fadeIn 0.3s ease-out; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+</html>
